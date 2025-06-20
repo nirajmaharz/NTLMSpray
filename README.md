@@ -20,7 +20,8 @@
 - `requests`
 - `requests_ntlm`
 - `colorama`
-
+- `argparse`
+  
 Install dependencies with:
 
 ```bash
