@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-python3 ntlmspray.py -u users.txt -f ZA.CORP.LOCAL -t http://target.local -p Welcome123
+python3 NTLMSpray.py -u users.txt -f ZA.CORP.LOCAL -t http://target.local -p Welcome123
 
 ## Options to consider
 
@@ -39,7 +39,7 @@ python3 ntlmspray.py -u users.txt -f ZA.CORP.LOCAL -t http://target.local -p Wel
 | `-t TARGET`        | Target URL protected by NTLM authentication (e.g., `http://host.local`).    |
 | `-p PASSWORD`      | Single password to spray.                                                   |
 | `-P PASSWORDFILE`  | File containing list of passwords to spray (one per line).                  |
-| `-o OUTFILE`       | File to save valid credential pairs. Optional.                              |
+| `-o OUTFILE`       | File to save valid credential pairs. (Optional)                              |
 | `-v`               | Enable verbose output. Optional.                                            |
 
 ---
@@ -48,10 +48,10 @@ python3 ntlmspray.py -u users.txt -f ZA.CORP.LOCAL -t http://target.local -p Wel
 
 ### Spray using a single password:
 ```bash
-python3 ntlm_spray.py -u usernames.txt -f ZA.CORP.LOCAL -t http://target.local -p Welcome123
+python3 NTLMSpray.py -u usernames.txt -f ZA.CORP.LOCAL -t http://target.local -p Welcome123
 ```
 
 ### Spray using a password list and save valid credentials:
 ```bash
-python3 ntlm_spray.py -u usernames.txt -f ZA.CORP.LOCAL -t http://target.local -P passwords.txt -o valid.txt -v
+python3 NTLMSpray.py -u usernames.txt -f ZA.CORP.LOCAL -t http://target.local -P passwords.txt -o valid.txt -v
 ```
